@@ -36,7 +36,9 @@ body {
 
 .layout-sidebar-content {
 	background: black;
+	display: -webkit-flex;
 	display: flex;
+	-webkit-flex: 1;
 	flex: 1;
 }
 
@@ -175,6 +177,7 @@ p {
 
 @media screen and (min-width:600px) {
 .layout-sidebar-flex-container {
+display: -webkit-flex;
 display: flex;
 }
 }
