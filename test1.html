@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+   <title>CodePen - Responsive Alternating Two Column Layout with Flexbox</title>
+  
+  
+    
+      <style>
+      .layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1em;
+  margin-left: -3.5em;
+  align-items: center;
+}
+.layout:not(:first-of-type) {
+  margin-top: 3em;
+}
+.layout:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.layout__item {
+  padding-top: 1em;
+  padding-left: 3.5em;
+}
+.layout__item--body {
+  flex-grow: 9999;
+  flex-basis: 15rem;
+}
+.layout__item--figure {
+  margin-right: auto;
+  flex-grow: 1;
+}
+@supports ((max-width: -webkit-max-content) or (max-width: -moz-max-content) or (max-width: max-content)) {
+  .layout__item--figure {
+    min-width: 15rem;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    flex-basis: 15rem;
+    flex-grow: 99999;
+  }
+}
+
+body {
+  max-width: 64em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3em 1em;
+  line-height: 1.5em;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+.layout__item * + * {
+  margin-top: 1em;
+}
+
+    </style>
+
+
+
+
+</head>
+
+<body translate="no" >
+
+  <div class="layout">
+  <div class="layout__item layout__item--body">
+    <h2>Lorem Ipsum</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consetetur sadipscing
+      elitr, sed diam nonumy eirmod tempor invidunt ut
+      labore et dolore magna aliquyam erat, sed diam voluptua.
+    </p>
+  </div>
+  <div class="layout__item layout__item--figure">
+    <img src="https://images.unsplash.com/photo-1516750930166-ed88ab1adb61?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=65c8f6fcafaf68f5fa434b5f076780fd&auto=format&fit=crop&w=600&q=80" alt="">
+  </div>
+</div>
+
+<div class="layout">
+  <div class="layout__item layout__item--body">
+    <h2>Lorem Ipsum</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consetetur sadipscing
+      elitr, sed diam nonumy eirmod tempor invidunt ut
+      labore et dolore magna aliquyam erat, sed diam voluptua.
+    </p>
+  </div>
+  <div class="layout__item layout__item--figure">
+    <img src="https://images.unsplash.com/photo-1515362790300-999394721afc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2a78b6877abab91c16e757ada8c55e32&auto=format&fit=crop&w=600&q=80" alt="">
+  </div>
+</div>
+
+<div class="layout">
+  <div class="layout__item layout__item--body">
+    <h2>Lorem Ipsum</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consetetur sadipscing
+      elitr, sed diam nonumy eirmod tempor invidunt ut
+      labore et dolore magna aliquyam erat, sed diam voluptua.
+    </p>
+  </div>
+  <div class="layout__item layout__item--figure">
+    <img src="https://images.unsplash.com/photo-1514747348279-46eb4082b804?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1b169d9f50db7714cd7373a3c181162a&auto=format&fit=crop&w=600&q=80" alt="">
+  </div>
+</div>
+
+<div class="layout">
+  <div class="layout__item layout__item--body">
+    <h2>Lorem Ipsum</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consetetur sadipscing
+      elitr, sed diam nonumy eirmod tempor invidunt ut
+      labore et dolore magna aliquyam erat, sed diam voluptua.
+    </p>
+  </div>
+  <div class="layout__item layout__item--figure">
+    <img src="https://images.unsplash.com/photo-1513843000111-3eb82159a25c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82618557ca42a6477f6bb9390eea27bc&auto=format&fit=crop&w=600&q=80" alt="">
+  </div>
+</div>
+  
+  
+  
+  
+  
+
+</body>
+
+</html>
+ 
